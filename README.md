@@ -1,0 +1,1 @@
+Для аутентификации по Oauth2 нужно запускать сервер через команду python manage.py runserver_plus --cert-file cert.crt т.к я использовал pyOpenSSL, потому что пройти oauth авторизацию можно только по протоколу https
