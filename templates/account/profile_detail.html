@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ profile.user.username }}'s</h1>
+<p>Date of Birth: {{ profile.date_of_birth }}</p>
+<p>О себе: {{profile.Description}}</p>
+{% if profile.photo %}
+    <img src="{{ profile.photo.url }}" alt="{{ profile.user.username }}'s photo">
+{% endif %}
+<a href="{% url 'account:profile_list' %}">К другим профилям</a>
+
+{% endblock %}
+
+
